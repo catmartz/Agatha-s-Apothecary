@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://saa8d5nb64bu"]
+
+[ext_resource type="Script" path="res://Bowl/BowlIngred.gd" id="1_abjyn"]
+[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Bowl/bowl.png" id="2_18x1y"]
+[ext_resource type="Texture2D" uid="uid://bhquh00h8phar" path="res://Bowl/bowlFiller.png" id="4_878wh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a024b"]
+radius = 157.099
+height = 432.537
+
+[node name="Bowl" type="Node2D"]
+script = ExtResource("1_abjyn")
+
+[node name="Bowl" type="Sprite2D" parent="."]
+scale = Vector2(2.62174, 2.72337)
+texture = ExtResource("2_18x1y")
+
+[node name="Area2D" type="Area2D" parent="Bowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bowl/Area2D"]
+position = Vector2(3.3559, -13.7172)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_a024b")
+
+[node name="BowlFiller" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, -230)
+scale = Vector2(2.75, 2.75)
+texture = ExtResource("4_878wh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+volume_db = 20.0
+
+[connection signal="input_event" from="Bowl/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Bowl/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Bowl/Area2D" to="." method="_on_area_2d_mouse_exited"]

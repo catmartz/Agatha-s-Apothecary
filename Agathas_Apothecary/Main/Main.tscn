@@ -1,0 +1,318 @@
+[gd_scene load_steps=49 format=3 uid="uid://dwd0is40eq5wj"]
+
+[ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
+[ext_resource type="AudioStream" uid="uid://cncfumfknpdnn" path="res://Audio/magic_music.mp3" id="2_0sa1h"]
+[ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
+[ext_resource type="Texture2D" uid="uid://cx81clwrbb00g" path="res://Main/DuckDuckGoose.png" id="3_hijh1"]
+[ext_resource type="PackedScene" uid="uid://d34d62osrfh8v" path="res://Hair/Hair.tscn" id="3_wpo1m"]
+[ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
+[ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/Graphics/cauldFill.png" id="4_ulhko"]
+[ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
+[ext_resource type="AudioStream" uid="uid://hhp3p7ghtabg" path="res://Audio/CyanNew.mp3" id="8_fv4sd"]
+[ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
+[ext_resource type="Texture2D" uid="uid://djfh24hidagi2" path="res://Main/Graphics/butterflyPea.png" id="10_cjri6"]
+[ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
+[ext_resource type="AudioStream" uid="uid://c24uwj26lkaas" path="res://Audio/WhiteNew.mp3" id="11_re5du"]
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/Graphics/daisyIng.png" id="12_xyxf1"]
+[ext_resource type="AudioStream" uid="uid://ct70r8mfhp173" path="res://Audio/MagNew.mp3" id="13_2cj17"]
+[ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potionFiller.tscn" id="13_6m1k2"]
+[ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
+[ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/Graphics/roseIng.png" id="14_iyrbw"]
+[ext_resource type="AudioStream" uid="uid://cfatk888wfk6m" path="res://Audio/YellowNew.mp3" id="15_usta5"]
+[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/Graphics/stJohnsWortIng.png" id="16_n6xqb"]
+[ext_resource type="AudioStream" uid="uid://f06ahxkfeis4" path="res://Audio/BlackNew.mp3" id="17_h2cmf"]
+[ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
+[ext_resource type="Texture2D" uid="uid://b60h2a8k7o7ug" path="res://Main/Graphics/petunia.png" id="18_xln3k"]
+[ext_resource type="AudioStream" uid="uid://3ldy7babwnit" path="res://Audio/GreenNew.mp3" id="19_qoolf"]
+[ext_resource type="Texture2D" uid="uid://cussklpnj6mc1" path="res://Main/Graphics/hydrangea.png" id="20_5xmma"]
+[ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
+[ext_resource type="AudioStream" uid="uid://d26hir8epvk3v" path="res://Audio/BlueNew.mp3" id="21_jj170"]
+[ext_resource type="AudioStream" uid="uid://yyfkgxh8e74l" path="res://Audio/RedNew.mp3" id="22_d2cch"]
+[ext_resource type="Texture2D" uid="uid://cjramlyhhp3p3" path="res://Main/Graphics/reset.png" id="25_nsyvr"]
+[ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/Graphics/menuIcon.png" id="26_bkyan"]
+[ext_resource type="Texture2D" uid="uid://cnnb85jglvj8i" path="res://Main/Graphics/gameMode.png" id="29_hgvib"]
+[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Graphics/welcomeParchment.png" id="31_afoek"]
+[ext_resource type="Texture2D" uid="uid://dey6cp4ux8xhb" path="res://Main/Graphics/agathaBody.png" id="33_acu7t"]
+[ext_resource type="Texture2D" uid="uid://0ka2wx0opi3s" path="res://Main/Graphics/agathaHat.png" id="34_4bp6l"]
+[ext_resource type="Texture2D" uid="uid://taqrtbpt1cef" path="res://Main/Graphics/cat.png" id="35_50scx"]
+
+[sub_resource type="Resource" id="Resource_6glc5"]
+script = ExtResource("5_y2ain")
+name = "Butterfly Pea"
+texture = ExtResource("10_cjri6")
+color = Color(0, 1, 1, 1)
+audioFile = ExtResource("8_fv4sd")
+
+[sub_resource type="Resource" id="Resource_eha88"]
+script = ExtResource("5_y2ain")
+name = "Daisy"
+texture = ExtResource("12_xyxf1")
+color = Color(1, 1, 1, 1)
+audioFile = ExtResource("11_re5du")
+
+[sub_resource type="Resource" id="Resource_deqvn"]
+script = ExtResource("5_y2ain")
+name = "Rose"
+texture = ExtResource("14_iyrbw")
+color = Color(1, 0, 1, 1)
+audioFile = ExtResource("13_2cj17")
+
+[sub_resource type="Resource" id="Resource_pti66"]
+script = ExtResource("5_y2ain")
+name = "StJohnWorts"
+texture = ExtResource("16_n6xqb")
+color = Color(1, 1, 0, 1)
+audioFile = ExtResource("15_usta5")
+
+[sub_resource type="Resource" id="Resource_x3q62"]
+script = ExtResource("5_y2ain")
+name = "Black"
+texture = ExtResource("18_xln3k")
+color = Color(0, 0, 0, 1)
+audioFile = ExtResource("17_h2cmf")
+
+[sub_resource type="Resource" id="Resource_3f5x8"]
+script = ExtResource("5_y2ain")
+name = "Hydrangea"
+texture = ExtResource("20_5xmma")
+color = Color(0, 1, 0, 1)
+audioFile = ExtResource("19_qoolf")
+
+[sub_resource type="Resource" id="Resource_gskca"]
+script = ExtResource("5_y2ain")
+name = "Butterfly Pea"
+texture = ExtResource("10_cjri6")
+color = Color(0, 0, 1, 1)
+audioFile = ExtResource("21_jj170")
+
+[sub_resource type="Resource" id="Resource_wuya8"]
+script = ExtResource("5_y2ain")
+name = "Red"
+texture = ExtResource("14_iyrbw")
+color = Color(1, 0, 0, 1)
+audioFile = ExtResource("22_d2cch")
+
+[sub_resource type="Curve2D" id="Curve2D_7seai"]
+_data = {
+"points": PackedVector2Array(0, 0, 2.08165e-12, 2.08165e-12, 680, 475, 0, 0, 0, 0, 680, 650)
+}
+point_count = 2
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hemfe"]
+radius = 580.0
+height = 1200.0
+
+[sub_resource type="GDScript" id="GDScript_53ty2"]
+script/source = "extends Sprite2D
+
+
+func _on_area_2d_mouse_entered():
+	scale = Vector2(0.21, 0.21)
+
+func _on_area_2d_mouse_exited():
+	scale = Vector2(0.2, 0.2)
+
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u4l8t"]
+size = Vector2(456.339, 357.414)
+
+[node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
+script = ExtResource("1_1j77y")
+metadata/_edit_horizontal_guides_ = []
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_0sa1h")
+volume_db = 24.0
+autoplay = true
+
+[node name="AaBackground" type="Sprite2D" parent="."]
+light_mask = 0
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.371, 0.3)
+texture = ExtResource("3_hijh1")
+centered = false
+
+[node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
+position = Vector2(658, 484)
+scale = Vector2(0.3, 0.3)
+
+[node name="Agatha" type="Node2D" parent="."]
+
+[node name="AgathasBody" type="Sprite2D" parent="Agatha"]
+position = Vector2(667.85, 521)
+scale = Vector2(0.34282, 0.35)
+texture = ExtResource("33_acu7t")
+
+[node name="AgathasHat" type="Sprite2D" parent="Agatha"]
+position = Vector2(691, 260)
+rotation = -0.0872665
+scale = Vector2(0.25, 0.267659)
+texture = ExtResource("34_4bp6l")
+
+[node name="CauldColor" type="Sprite2D" parent="."]
+position = Vector2(687, 696)
+scale = Vector2(0.339074, 0.259983)
+texture = ExtResource("4_ulhko")
+
+[node name="Cauldron" parent="." instance=ExtResource("3_c5n6v")]
+position = Vector2(675, 765)
+
+[node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(250, 775)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_6glc5")
+
+[node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(450, 768)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_eha88")
+
+[node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(250, 915)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_deqvn")
+
+[node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(450, 915)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_pti66")
+
+[node name="Bowl5" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(915, 774)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_x3q62")
+
+[node name="Bowl6" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(1115, 915)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_3f5x8")
+
+[node name="Bowl7" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(915, 915)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_gskca")
+
+[node name="Bowl8" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(1115, 777)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_wuya8")
+
+[node name="PotionFiller1" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(78, 195)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller1" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="PotionFiller2" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(188, 195)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller2" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="PotionFiller3" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(298, 195)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller3" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="PotionFiller4" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(78, 445)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller4" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="PotionFiller5" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(188, 445)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller5" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="PotionFiller6" parent="." instance=ExtResource("13_6m1k2")]
+position = Vector2(298, 445)
+scale = Vector2(0.06, 0.06)
+
+[node name="PotionBottle" parent="PotionFiller6" instance=ExtResource("13_vxoe3")]
+scale = Vector2(1.02, 1.02)
+
+[node name="IngredPath" type="Path2D" parent="."]
+position = Vector2(0, -2)
+curve = SubResource("Curve2D_7seai")
+script = ExtResource("10_c6hfc")
+
+[node name="IngredPathFollow" type="PathFollow2D" parent="IngredPath"]
+position = Vector2(680, 475)
+rotation = 1.5708
+
+[node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
+rotation = -1.5708
+scale = Vector2(0.1, 0.1)
+script = ExtResource("11_o5g3n")
+
+[node name="Area2D" type="Area2D" parent="IngredPath/IngredPathFollow/IngredSprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IngredPath/IngredPathFollow/IngredSprite/Area2D"]
+shape = SubResource("CapsuleShape2D_hemfe")
+
+[node name="ResetButton" type="TextureButton" parent="."]
+offset_left = 28.0
+offset_top = 623.0
+offset_right = 153.0
+offset_bottom = 748.0
+texture_normal = ExtResource("25_nsyvr")
+stretch_mode = 4
+
+[node name="MenuButton" type="Sprite2D" parent="."]
+position = Vector2(1529, 75)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("26_bkyan")
+script = SubResource("GDScript_53ty2")
+
+[node name="Area2D" type="Area2D" parent="MenuButton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MenuButton/Area2D"]
+shape = SubResource("RectangleShape2D_u4l8t")
+
+[node name="ColorCheckButton" parent="." instance=ExtResource("18_hem06")]
+position = Vector2(1073, 372)
+scale = Vector2(1.2, 1.2)
+
+[node name="GameTypeButton" type="TextureButton" parent="."]
+offset_left = 1198.0
+offset_top = 41.0
+offset_right = 1448.0
+offset_bottom = 168.0
+texture_normal = ExtResource("29_hgvib")
+script = ExtResource("21_1xi6p")
+
+[node name="Cat" type="Node2D" parent="."]
+position = Vector2(1399, 839)
+
+[node name="Cat" type="Sprite2D" parent="Cat"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("35_50scx")
+
+[node name="Welcome" type="TextureButton" parent="."]
+offset_left = 267.0
+offset_top = 51.0
+offset_right = 2592.0
+offset_bottom = 2195.0
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("31_afoek")
+script = ExtResource("13_nsqdl")
+
+[connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
+[connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_exited"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="input_event" from="MenuButton/Area2D" to="Welcome" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="MenuButton/Area2D" to="MenuButton" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="MenuButton/Area2D" to="MenuButton" method="_on_area_2d_mouse_exited"]
